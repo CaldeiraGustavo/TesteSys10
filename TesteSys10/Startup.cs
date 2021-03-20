@@ -1,15 +1,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using TesteSys10.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace TesteSys10
 {
@@ -27,6 +22,7 @@ namespace TesteSys10
         {
 
             services.AddControllers();
+            services.AddDbContext<EducationContext>(options => options.UseSqlServer(Configuration.GetConnectionString("EducationContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
