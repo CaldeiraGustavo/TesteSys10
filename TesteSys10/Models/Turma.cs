@@ -9,5 +9,7 @@ namespace TesteSys10.Models
     {
         public long Id { get; set; }
         public string Nome { get; set; }
+        public List<Alunos> Alunos { get; set; }
+        public long EscolaId { get; set; }
     }
 }

@@ -10,5 +10,6 @@ namespace TesteSys10.Models
         public long Id { get; set; }
         public string Nome { get; set; }
         public float Nota { get; set; }
+        public long TurmaId { get; set; }
     }
 }
