@@ -47,7 +47,7 @@ namespace TesteSys10.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Nota = table.Column<float>(type: "real", nullable: false),
-                    TurmaId = table.Column<long>(type: "bigint", nullable: false)
+                    TurmaId = table.Column<long>(type: "bigint", nullable: true)
                 },
                 constraints: table =>
                 {
