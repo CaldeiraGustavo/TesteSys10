@@ -12,5 +12,6 @@ namespace TesteSys10.Data
         public DbSet<Alunos> Alunos { get; set; }
         public DbSet<Escola> Escola { get; set; }
         public DbSet<Turma> Turma { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
     }
 }

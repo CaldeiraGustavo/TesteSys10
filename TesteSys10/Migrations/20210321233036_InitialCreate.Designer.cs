@@ -9,7 +9,7 @@ using TesteSys10.Data;
 namespace TesteSys10.Migrations
 {
     [DbContext(typeof(EducationContext))]
-    [Migration("20210320143412_InitialCreate")]
+    [Migration("20210321233036_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -76,6 +76,30 @@ namespace TesteSys10.Migrations
                     b.HasIndex("EscolaId");
 
                     b.ToTable("Turma");
+                });
+
+            modelBuilder.Entity("TesteSys10.Models.Usuario", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nome")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Senha")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Tipo")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Usuario");
                 });
 
             modelBuilder.Entity("TesteSys10.Models.Alunos", b =>

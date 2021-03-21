@@ -138,6 +138,30 @@ namespace TesteSys10.Models
                         TurmaId = 9
                     }
                 );
+
+                context.Usuario.AddRange(
+                    new Usuario
+                    {
+                        Tipo = 1,
+                        Nome = "Gustavo",
+                        Email = "gustavo@hotmail.com",
+                        Senha = "gust12"
+                    },
+                    new Usuario
+                    {
+                        Tipo = 2,
+                        Nome = "Joao",
+                        Email = "joao@gmail.com",
+                        Senha = "Joa1"
+                    },
+                    new Usuario
+                    {
+                        Tipo = 1,
+                        Nome = "Marina",
+                        Email = "marina@outlook.com",
+                        Senha = "M@r1n@"
+                    }
+                );
                 context.SaveChanges();
             }
         }
