@@ -37,48 +37,39 @@ namespace TesteSys10.Models
                 context.Turma.AddRange(
                     new Turma
                     {
-                        Nome = "Turma Luz",
-                        EscolaId = 1
+                        Nome = "Turma Luz"
                     },
                     new Turma
                     {
-                        Nome = "Turma Alegria",
-                        EscolaId = 1
+                        Nome = "Turma Alegria"
                     },
                     new Turma
                     {
-                        Nome = "Turma Felicidade",
-                        EscolaId = 1
+                        Nome = "Turma Felicidade"
                     },
                     new Turma
                     {
-                        Nome = "Turma A",
-                        EscolaId = 2
+                        Nome = "Turma A"
                     },
                     new Turma
                     {
-                        Nome = "Turma B",
-                        EscolaId = 2
+                        Nome = "Turma B"
                     },
                     new Turma
                     {
-                        Nome = "Turma C",
-                        EscolaId = 2
+                        Nome = "Turma C"
                     },
                     new Turma
                     {
-                        Nome = "Turma Alfa",
-                        EscolaId = 3
+                        Nome = "Turma Alfa"
                     },
                     new Turma
                     {
-                        Nome = "Turma Beta",
-                        EscolaId = 3
+                        Nome = "Turma Beta"
                     },
                     new Turma
                     {
-                        Nome = "Turma Omega",
-                        EscolaId = 3
+                        Nome = "Turma Omega"
                     }
                 );
 
@@ -86,56 +77,47 @@ namespace TesteSys10.Models
                     new Alunos
                     {
                         Nome = "Gustavo",
-                        Nota = 10,
-                        TurmaId = 1
+                        Nota = 10
                     },
                     new Alunos
                     {
                         Nome = "Lucas",
-                        Nota = 7,
-                        TurmaId = 2
+                        Nota = 7
                     },
                     new Alunos
                     {
                         Nome = "Camila",
-                        Nota = 9,
-                        TurmaId = 3
+                        Nota = 9
                     },
                     new Alunos
                     {
                         Nome = "Marina",
-                        Nota = 10,
-                        TurmaId = 4
+                        Nota = 10
                     },
                     new Alunos
                     {
                         Nome = "Julia",
-                        Nota = 3,
-                        TurmaId = 5
+                        Nota = 3
                     },
                     new Alunos
                     {
                         Nome = "Rafael",
-                        Nota = 8,
-                        TurmaId = 6
+                        Nota = 8
                     },
                     new Alunos
                     {
                         Nome = "Joaquim",
-                        Nota = 4,
-                        TurmaId = 7
+                        Nota = 4
                     },
                     new Alunos
                     {
                         Nome = "Ana",
-                        Nota = 2,
-                        TurmaId = 8
+                        Nota = 2
                     },
                     new Alunos
                     {
                         Nome = "Aline",
-                        Nota = 1,
-                        TurmaId = 9
+                        Nota = 1
                     }
                 );
 

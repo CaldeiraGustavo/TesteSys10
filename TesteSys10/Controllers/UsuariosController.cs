@@ -104,5 +104,17 @@ namespace TesteSys10.Controllers
         {
             return _context.Usuario.Any(e => e.Id == id);
         }
+
+        public async Task<ActionResult<Usuario>> GetByEmail(string email)
+        {
+            var usuario = await _context.Usuario.FirstOrDefaultAsync(u => u.Email.Equals(email));
+
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+
+            return usuario;
+        }
     }
 }
