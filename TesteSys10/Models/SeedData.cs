@@ -14,10 +14,10 @@ namespace TesteSys10.Models
                 serviceProvider.GetRequiredService<
                     DbContextOptions<EducationContext>>()))
             {
-                // Look for any movies.
+                // Verifica se existem alunos
                 if (context.Alunos.Any())
                 {
-                    return;   // DB has been seeded
+                    return;   // Banco foi semeado
                 }
 
                 context.Escola.AddRange(

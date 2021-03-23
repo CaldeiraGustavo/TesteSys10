@@ -16,7 +16,7 @@ namespace TesteSys10.Controllers
 
         [HttpPost]
         [AllowAnonymous]
-        [Route("/api/v1/auth")]
+        [Route("/api/Auth")]
         public async Task<IActionResult> Auth([FromBody]Usuario user)
         {
             try
@@ -28,7 +28,7 @@ namespace TesteSys10.Controllers
                 if (userExists == null)
                     return BadRequest(new { Message = "Email e/ou senha está(ão) inválido(s)." });
 
-                /*
+                /* validação a fazer
                 if(userExists.Senha != user.Senha)
                     return BadRequest(new { Message = "Email e/ou senha está(ão) inválido(s)." });
 
